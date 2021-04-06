@@ -1,0 +1,155 @@
+$purple: #09157f;
+
+@font-face {
+	font-family: "SFProDisplay";
+	src: local("Telegraf"), url("./fonts/SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+	font-family: "SFProDisplayBold";
+	src: local("Telegraf"), url("./fonts/SFProDisplay-Semibold.ttf");
+}
+
+@font-face {
+	font-family: "SFProDisplayThin";
+	src: local("Telegraf"), url("./fonts/SFProDisplay-Thin.ttf");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: SFProDisplay;
+}
+
+.font-weight-bold {
+	font-family: SFProDisplayBold;
+}
+
+.font-weight-light {
+	font-family: SFProDisplayThin;
+}
+
+.bg-purple {
+	background: $purple;
+}
+
+.text-purple {
+	color: $purple;
+}
+
+.object-fit-cover {
+	object-fit: cover;
+}
+
+.pt {
+	&-6 {
+		padding-top: 6rem !important;
+	}
+
+	&-md-6 {
+		@media screen and (min-width: 768px) {
+			padding-top: 6rem !important;
+		}
+	}
+
+	&-lg-5 {
+		@media screen and (min-width: 992px) {
+			padding-top: 4rem !important;
+		}
+	}
+
+	&-md-7 {
+		@media screen and (min-width: 768px) {
+			padding-top: 7rem !important;
+		}
+	}
+	
+    &-lg-7 {
+		@media screen and (min-width: 992px) {
+			padding-top: 7rem !important;
+		}
+	}
+}
+
+.py {
+	&-7 {
+		padding-top: 7rem !important;
+		padding-bottom: 7rem !important;
+	}
+
+	&-md-7 {
+		@media screen and (min-width: 768px) {
+			padding-top: 7rem !important;
+			padding-bottom: 7rem !important;
+		}
+	}
+
+	&-lg-7 {
+		@media screen and (min-width: 992px) {
+			padding-top: 7rem !important;
+			padding-bottom: 7rem !important;
+		}
+	}
+}
+
+/********************************************
+*********************************************
+                    LAYOUT
+*********************************************
+********************************************/
+
+.layout {
+	.profile__pic {
+		width: 50px;
+		height: 50px;
+	}
+
+	@media screen and (min-width: 768px) {
+		.d-md-grid {
+			display: grid !important;
+		}
+	}
+
+	&--grid {
+		display: grid;
+		grid-template-columns: 230px 1fr;
+	}
+
+	.navigation {
+		min-height: 100vh;
+		background: #fff;
+
+		@media screen and (min-width: 768px) {
+			background: $purple;
+		}
+
+		&--links {
+			display: grid;
+			grid-template-columns: 50px 1fr;
+			align-content: center;
+			color: #fff;
+			position: relative;
+			border-left: 4px solid transparent;
+
+			svg {
+				fill: #fff;
+			}
+
+			&:hover {
+				text-decoration: none;
+				background: #fff;
+				background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22));
+				border-left: 4px solid #fff;
+			}
+
+			span {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}

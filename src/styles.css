@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("Telegraf"), url("./fonts/SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SFProDisplayBold";
+  src: local("Telegraf"), url("./fonts/SFProDisplay-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "SFProDisplayThin";
+  src: local("Telegraf"), url("./fonts/SFProDisplay-Thin.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: SFProDisplay;
+}
+
+.font-weight-bold {
+  font-family: SFProDisplayBold;
+}
+
+.font-weight-light {
+  font-family: SFProDisplayThin;
+}
+
+.bg-purple {
+  background: #09157f;
+}
+
+.text-purple {
+  color: #09157f;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.pt-6 {
+  padding-top: 6rem !important;
+}
+
+@media screen and (min-width: 768px) {
+  .pt-md-6 {
+    padding-top: 6rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pt-lg-5 {
+    padding-top: 4rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pt-md-7 {
+    padding-top: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pt-lg-7 {
+    padding-top: 7rem !important;
+  }
+}
+
+.py-7 {
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important;
+}
+
+@media screen and (min-width: 768px) {
+  .py-md-7 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .py-lg-7 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+  }
+}
+
+/********************************************
+*********************************************
+                    LAYOUT
+*********************************************
+********************************************/
+.layout .profile__pic {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .layout .d-md-grid {
+    display: grid !important;
+  }
+}
+
+.layout--grid {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.layout .navigation {
+  min-height: 100vh;
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .layout .navigation {
+    background: #09157f;
+  }
+}
+
+.layout .navigation--links {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-content: center;
+  color: #fff;
+  position: relative;
+  border-left: 4px solid transparent;
+}
+
+.layout .navigation--links svg {
+  fill: #fff;
+}
+
+.layout .navigation--links:hover {
+  text-decoration: none;
+  background: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22));
+  border-left: 4px solid #fff;
+}
+
+.layout .navigation--links span {
+  font-size: 16px;
+  line-height: 24px;
+}
